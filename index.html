@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+ <head>
+  <meta charset="UTF-8">
+  	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>飞机大战</title>
+  <style>
+	#canFly{
+		background-color:#999999;
+		cursor:pointer;
+	}
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+ </head>
+ <body>
+ 	<div id="contentDiv">
+			<!--上部声音按钮-->
+			<button onclick="sound()" id="sounds"><span id="soundValue">声音：开</span></button>
+			<!--主菜单-->
+			<div id="homePage">			 	
+			 	<div id="buttonGroup">
+			 		<button onclick="begin()">开始游戏</button>
+		        	<button onclick="shop()">商店</button>
+		        	<button>最高分：<span id="maxScore">0</span></button>
+		        	<button><a href="javascript:self.close()" >离开游戏</a></button>
+			 	</div>		        		        
+		   	</div>
+		   		   	
+			<div id="endPage">
+				<span>GAME OVER</span>
+				<div id="buttonGroup">					
+			 		<button onclick="re()">返回主菜单</button>
+		        	<button onclick="begin()">再来一次</button>	
+		        	<button>本次分数：<span id="thisScore">0</span></button>
+		        	<button>最高分：<span id="maxScore2">0</span></button>
+		        	<button><a href="javascript:self.close()" >离开游戏</a></button>
+			 	</div>	
+			</div>
+			
+			<div id="shopPage">
+				<button onclick="re()"  id="ret">返回主菜单</button>
+				<div id="buttonGroup">
+			 		<button onclick="bgShop()"><span id="bgShop">背景贴图:初级(10$)</span></button>
+			 		<button onclick="plShop()"><span id="plShop">飞机贴图:初级(10$)</span></button>
+			 		<button onclick="enShop()"><span id="enShop">敌机贴图:初级(10$)</span></button>
+			 		<button onclick="shShop()"><span id="shShop">子弹贴图:下级(100$)</span></button>
+			 		<button onclick="shvShop()"><span id="shvShop">子弹速度:一级(10$)</span></button>
+			 		<button onclick="liShop()"><span id="liShop">生命值:一级(10$)</span></button>
+			 		<button onclick="bgmShop()"><span id="bgmShop">背景音乐:无(100$)</span></button>
+			 		<button onclick="boShop()"><span id="boShop">boom声:无(100$)</span></button>
+			 		<button onclick="shbShop()"><span id="shbShop">子弹声:无(100$)</span></button>		
+			 	</div>			
+			</div>
+			
+			
+		   	<!--底部金币-->
+		   	<p>累计分数:<span id="moneyScore">10000</span></p>
+	<div>
+		<canvas id="canFly" width="320" height="568"></canvas>
+	</div>
+ </body>
+ <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+
+ 	
+	
+ </html>

@@ -1,0 +1,160 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#ret{
+	position:absolute;
+	width: 70px;
+    height: 18px;
+	top: 10px;
+	left:5%;
+	border: 1px solid black;
+    border-radius: 30px;
+    outline:none;
+    background-color:rgba(255,255,255,1);
+}
+#ret:hover{	
+	background-color:rgba(252,252,250,0.5);
+}
+/*主体*/
+#contentDiv{
+	position: absolute;
+	width:320px ;
+	height: 568px;
+	background-color: white;
+	
+}
+@media screen and (min-width: 960px){
+    #contentDiv{
+
+	top: 5%;
+	left: 50%;	
+	transform:translateX(-50%) ;
+}
+}
+/*声音按钮*/
+#sounds{
+	position:absolute;
+	width: 70px;
+    height: 18px;
+	bottom: 10px;
+	right:5%;
+	border: 1px solid black;
+    border-radius: 30px;
+    outline:none;
+    background-color:rgba(255,255,255,1);
+}
+#sounds:hover{	
+	background-color:rgba(252,252,250,0.5);
+}
+/*底部金钱数*/
+p{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;	
+	transform:translateX(-50%) ;
+	cursor: default;
+	color: white;
+}
+/*主页面**************************************************************/
+#homePage{
+	width:320px ;
+	height: 568px;
+	background-image: url(../images0/bg.png);
+}
+/*主页面按钮组*/
+#homePage #buttonGroup{
+	position: absolute;
+    top: 300px;
+    left: 50%;	
+	transform:translateX(-50%) ;
+    width: 150px;
+    height: 180px;   
+}
+/*主页面按钮*/
+#homePage #buttonGroup button{
+	width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color:rgba(255,255,255,1);
+    outline:none;
+    margin-bottom: 15px;
+}
+#homePage #buttonGroup button:hover{	
+	background-color:rgba(252,252,250,0.5);
+}
+
+/*结束选择页面*****************************************************************/
+
+#endPage{
+	width:320px ;
+	height: 568px;
+	background-image: url(../images0/start.png);
+}
+/*结束页面按钮组*/
+#endPage #buttonGroup{
+	position: absolute;
+    top: 300px;
+    left: 50%;	
+	transform:translateX(-50%) ;
+    width: 150px;
+    height: 180px;   
+}
+/*结束页面按钮*/
+#endPage #buttonGroup button{
+	width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color:rgba(255,255,255,1);
+    outline:none;
+    margin-bottom: 15px;
+}
+#endPage>span{
+	display: block;
+	position: absolute;
+	top: 150px;
+	left: 25px;
+	font-size: 45px;
+	font-family: "微软雅黑";
+	color: white;
+}
+#endPage #buttonGroup button:hover{	
+	background-color:rgba(252,252,250,0.5);
+}
+/*商店页面************************************************************/
+#shopPage{
+	width:320px ;
+	height: 568px;
+	background-image: url(../images0/start.png);
+}
+/*关卡选择页面按钮组*/
+#shopPage #buttonGroup{
+	position: absolute;
+    top: 20%;
+    left: 50%;	
+	transform:translateX(-50%) ;
+    width: 241px;
+    height: 450px;
+    margin-left: 20px;
+}
+/*关卡选择页面按钮*/
+#shopPage #buttonGroup button{
+	width: 50px;
+    height: 50px;
+    margin-bottom: 25px; 
+    margin-right: 25px;
+    border: 1px solid black;
+    /*border-radius: 30px;*/
+    background-color:rgba(255,255,255,1);
+    outline:none; 
+    overflow: hidden;
+}
+#shopPage #buttonGroup button:hover{
+	background-color:rgba(252,252,250,0.5);
+}
